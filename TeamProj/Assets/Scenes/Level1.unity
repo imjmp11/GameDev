@@ -4899,6 +4899,10 @@ Prefab:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1001816477}
+    - target: {fileID: 4757769045115254, guid: 75f87cd2bb5fa0b44a5a141834b563ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.07
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75f87cd2bb5fa0b44a5a141834b563ef, type: 2}
   m_IsPrefabAsset: 0
