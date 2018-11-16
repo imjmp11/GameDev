@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114233501802092636}
   - component: {fileID: 60029806149447770}
   - component: {fileID: 50560005235503088}
+  - component: {fileID: 95337219485915910}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -37,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1604699041993648}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0258, y: 0.36, z: -0.0571938}
-  m_LocalScale: {x: 0.026536046, y: 1.271442, z: 1.271442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0035740414, y: 0.47365743, z: -0.00660599}
+  m_LocalScale: {x: 0.0038769871, y: 0.21816626, z: 0.21816626}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50560005235503088
 Rigidbody2D:
   serializedVersion: 4
@@ -80,7 +81,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 3.2, y: 3.5}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -88,15 +89,29 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.049999997, y: 0.099999994}
-      - {x: -0.099999994, y: 0.044999998}
-      - {x: -0.099999994, y: -0.03}
-      - {x: -0.074999996, y: -0.085}
-      - {x: -0.065, y: -0.099999994}
-      - {x: 0.06, y: -0.099999994}
-      - {x: 0.099999994, y: -0.074999996}
-      - {x: 0.099999994, y: 0.055}
-      - {x: 0.049999997, y: 0.099999994}
+    - - {x: 0.45, y: 1.2}
+      - {x: 1.35, y: -0.2}
+      - {x: 0, y: -1.25}
+      - {x: -1.35, y: -0.2}
+      - {x: -0.45, y: 1.2}
+--- !u!95 &95337219485915910
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604699041993648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fa9b34fd942fc94c81960a4cd055118, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114085826716289298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -157,7 +172,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b877c070a2333145afa93d64453da15, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84fcd96d3cb50624bad65617c26c6149, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
