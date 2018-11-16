@@ -6,11 +6,6 @@ public class Damage : MonoBehaviour {
 
     public float damageAmount = 25;
 
-    private void Start()
-    {
-     
-    }
-
     void OnTriggerEnter2D(Collider2D col)
     {
         EnemyHealth bh = col.gameObject.GetComponent<EnemyHealth>();
