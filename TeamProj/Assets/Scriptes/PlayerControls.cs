@@ -22,7 +22,7 @@ public class PlayerControls : MonoBehaviour
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
 
-        if (transform.position.y <= -10)
+        if (transform.position.y <= -100)
         {
             rb.velocity = Vector2.zero;
           
@@ -33,7 +33,7 @@ public class PlayerControls : MonoBehaviour
         {
             //Check if we are on the ground right now
             GameObject feet = transform.GetChild(0).gameObject;
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, .5f);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, 10f);
             foreach (Collider2D col in colliders)
             {
                 //Don't jump off ourselves
@@ -59,8 +59,6 @@ public class PlayerControls : MonoBehaviour
                 //GetComponent<AudioSource>().Play();
             }
         }
-       /* if (GetComponent<Health>().IsDead())
-            ChangeRespawns(); */
     }
 	
 	void FixedUpdate ()
