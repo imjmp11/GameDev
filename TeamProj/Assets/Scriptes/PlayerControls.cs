@@ -33,7 +33,7 @@ public class PlayerControls : MonoBehaviour
         {
             //Check if we are on the ground right now
             GameObject feet = transform.GetChild(0).gameObject;
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, 10f);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, .5f);
             foreach (Collider2D col in colliders)
             {
                 //Don't jump off ourselves
